@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>채팅방 리스트</title>
+</head>
+<body>
+<h1>채팅방 목록</h1>
+<ul>
+    <li th:each="chatRoom : ${chatRooms}">
+    <a th:href="${ChatRoom.id}">
+        <span th:text="${chatRoom.id}"></span>
+        <span>[[${chatRoom.name}]]</span>
+    </a>
+    </li>
+    
+</ul>
+</body>
+</html>
